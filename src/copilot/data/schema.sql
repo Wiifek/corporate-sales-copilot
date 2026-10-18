@@ -15,7 +15,7 @@ CREATE TABLE routes (
     origin_iata         VARCHAR NOT NULL REFERENCES airports(iata),
     destination_iata    VARCHAR NOT NULL REFERENCES airports(iata),
     distance_km         INTEGER NOT NULL,
-    haul                VARCHAR NOT NULL,              -- short (<1500 km) | medium | long (>5000 km)
+    haul                VARCHAR NOT NULL,              -- short (up to 1500 km) | medium (up to 5000 km) | long (over 5000 km)
     market_region       VARCHAR NOT NULL               -- region of the non-hub end of the route
 );
 
