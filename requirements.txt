@@ -1,5 +1,2 @@
-numpy>=1.26
-pandas>=2.1
-duckdb>=1.0
-faker>=24.0
+-e .
 pytest>=8.0

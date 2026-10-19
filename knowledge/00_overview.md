@@ -60,7 +60,7 @@ Access rules apply to every answer, whatever the question:
 
 - **Global analyst:** all sales regions and all accounts.
 - **Regional director:** only the accounts of their own sales region, and only their region's targets.
-- **Account manager:** only the accounts they manage.
+- **Account manager:** only the accounts they manage. Regional targets are not shown to them, because a target combines the revenue of accounts they do not manage.
 
 A question about data outside the user's scope must be refused, and the refusal should say
 that it is an access restriction, not that the data does not exist.

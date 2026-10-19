@@ -18,7 +18,7 @@ Regional directors and commercial control (targets); account managers and region
 - Did a region reach its revenue target in a given quarter, and by how much did it miss or beat it?
 - Which regions are furthest from their target?
 - Which accounts respect their contract commitment, which are at risk and which are off track?
-- How many tickets is an account still expected to buy to meet its commitment?
+- How far is an account from its (prorated) commitment, in tickets?
 
 ## Filters
 - Sales region
@@ -45,7 +45,8 @@ Number of accounts in each Contract compliance status (On track, At risk, Off tr
 
 #### Account compliance table
 One row per account, sortable, with: account name, account manager, contract type, annual commitment,
-prorated commitment for the period, tickets sold, commitment attainment and compliance status.
+prorated commitment for the period, tickets sold, commitment attainment, gap to commitment and compliance status.
+The gap is tickets sold minus prorated commitment; a negative gap is a shortfall.
 
 ## Metrics used
 - Booked net revenue
@@ -53,6 +54,9 @@ prorated commitment for the period, tickets sold, commitment attainment and comp
 - Target attainment
 - Commitment attainment
 - Contract compliance status
+
+## Access
+Section A (regional targets) is not shown to account managers, because targets combine the revenue of accounts they do not manage. Regional directors see only their own region.
 
 ## Data sources
 Tables `targets`, `bookings`, `accounts` and `contracts`.

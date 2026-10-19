@@ -26,7 +26,7 @@ Account managers (their own accounts) and regional directors (all accounts of th
 - Account manager
 - Size tier
 - Industry
-- Booking date range (default: the 12 months up to the as-of date, 2026-09-30)
+- Period (by booking date): presets *Year to date 2026* (default), *Last 12 months*, *Full year 2025*, or a custom range
 
 ## Content
 
@@ -63,4 +63,4 @@ Tables `bookings` and `accounts`. The discount shown comes from the tickets, so 
 - Route, distance or cabin details: see the Route & Cabin Revenue dashboard.
 - Regional targets and contract commitments: see the Targets & Contract Compliance dashboard.
 - Flown revenue and gross revenue are not displayed (they can be computed from the data).
-- Year-over-year growth is only available for 2026 periods, because the data starts on 2025-01-01.
+- Year-over-year growth is only available for periods starting in 2026, because the data starts on 2025-01-01; for other periods the tile shows n/a.

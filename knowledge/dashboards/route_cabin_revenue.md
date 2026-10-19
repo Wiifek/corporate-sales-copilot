@@ -26,7 +26,7 @@ Network and revenue analysts, and regional directors.
 - Market region (region of the route, not of the customer)
 - Haul (short, medium, long)
 - Cabin
-- Booking date range (default: the 12 months up to the as-of date, 2026-09-30)
+- Period (by booking date): presets *Year to date 2026* (default), *Last 12 months*, *Full year 2025*, or a custom range
 
 ## Content
 

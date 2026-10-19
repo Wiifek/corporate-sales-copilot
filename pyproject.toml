@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corporate-sales-copilot"
+version = "0.1.0"
+description = "Conversational assistant over corporate airline sales dashboards"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "duckdb>=1.0",
+    "faker>=24.0",
+    "streamlit>=1.50",
+    "plotly>=5.20",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
